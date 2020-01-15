@@ -1,0 +1,237 @@
+
+liliu@LAPTOP-NKPVGT34 MINGW64 ~
+$ cd desktop
+liliu@LAPTOP-NKPVGT34 MINGW64 ~/desktop
+$ cd cs61a
+
+liliu@LAPTOP-NKPVGT34 MINGW64 ~/desktop/cs61a
+$ cd lab/lab05
+liliu@LAPTOP-NKPVGT34 MINGW64 ~/desktop/cs61a/lab/lab05
+$ cd ..
+liliu@LAPTOP-NKPVGT34 MINGW64 ~/desktop/cs61a/lab
+$ cd lab06
+
+liliu@LAPTOP-NKPVGT34 MINGW64 ~/desktop/cs61a/lab/lab06
+$ python ok -q make_adder_inc --local                                  =====================================================================
+Assignment: Lab 6
+OK, version v1.14.19
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Doctests for make_adder_inc
+
+>>> from lab06 import *
+>>> adder1 = make_adder_inc(5)
+>>> adder2 = make_adder_inc(6)
+>>> adder1(2)
+TypeError: 'NoneType' object is not callable
+
+# Error: expected
+#     7
+# but got
+#     Traceback (most recent call last):
+#       ...
+#     TypeError: 'NoneType' object is not callable
+
+---------------------------------------------------------------------
+Test summary
+    0 test cases passed before encountering first failed test case
+
+Cannot backup when running ok with --local.
+
+liliu@LAPTOP-NKPVGT34 MINGW64 ~/desktop/cs61a/lab/lab06
+$ python ok -q make_adder_inc --local
+=====================================================================
+Assignment: Lab 6
+OK, version v1.14.19
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Doctests for make_adder_inc
+
+>>> from lab06 import *
+>>> adder1 = make_adder_inc(5)
+>>> adder2 = make_adder_inc(6)
+>>> adder1(2)
+7
+>>> adder1(2) # 5 + 2 + 1
+7
+
+# Error: expected
+#     8
+# but got
+#     7
+
+---------------------------------------------------------------------
+Test summary
+    0 test cases passed before encountering first failed test case
+
+Cannot backup when running ok with --local.
+
+liliu@LAPTOP-NKPVGT34 MINGW64 ~/desktop/cs61a/lab/lab06
+$ python ok -q make_adder_inc --local
+=====================================================================
+Assignment: Lab 6
+OK, version v1.14.19
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Running tests
+
+---------------------------------------------------------------------
+Test summary
+    1 test cases passed! No cases failed.
+
+Cannot backup when running ok with --local.
+
+liliu@LAPTOP-NKPVGT34 MINGW64 ~/desktop/cs61a/lab/lab06
+$ python ok -q wwpd-car -u
+=====================================================================
+Assignment: Lab 6
+OK, version v1.14.19
+=====================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Unlocking tests
+
+At each "? ", type what you would expect the output to be.
+Type exit() to quit
+
+---------------------------------------------------------------------
+Car > Suite 1 > Case 1
+(cases remaining: 3)
+
+What would Python display? If you get stuck, try it out in the Python
+interpreter!
+
+>>> from car import *
+>>> deneros_car = Car('Tesla', 'Model S')
+>>> deneros_car.model
+? Tesla
+-- Not quite. Try again! --
+
+? 'Tesla
+-- Not quite. Try again! --
+
+? 'Tesla'
+-- Not quite. Try again! --
+
+? Mdel S
+-- Not quite. Try again! --
+
+? Model S
+-- Not quite. Try again! --
+
+? Model S
+-- Not quite. Try again! --
+
+? 'Model S'
+-- OK! --
+
+>>> deneros_car.gas = 10
+>>> deneros_car.drive()
+? "Tesla Model S goes vroom!"
+-- OK! --
+
+>>> deneros_car.drive()
+? 'Cannot drive!'
+-- OK! --
+
+>>> deneros_car.fill_gas()
+? 'Gas level: 20'
+-- OK! --
+
+>>> deneros_car.gas
+? 20
+-- OK! --
+
+>>> Car.gas
+? 30
+-- OK! --
+
+---------------------------------------------------------------------
+Car > Suite 1 > Case 2
+(cases remaining: 2)
+
+What would Python display? If you get stuck, try it out in the Python
+interpreter!
+
+>>> from car import *
+>>> deneros_car = Car('Tesla', 'Model S')
+>>> deneros_car.wheels = 2
+>>> deneros_car.wheels
+? 2
+-- OK! --
+
+>>> Car.num_wheels
+? 4
+-- OK! --
+
+>>> deneros_car.drive() # Type Error if an error occurs and Nothing if nothing is displayed
+? 'Cannot drive!'
+-- OK! --
+
+>>> Car.drive() # Type Error if an error occurs and Nothing if nothing is displayed
+? Error
+-- OK! --
+
+>>> Car.drive(deneros_car) # Type Error if an error occurs and Nothing if nothing is displayed
+? 'Cannot drive!'
+-- OK! --
+
+---------------------------------------------------------------------
+Car > Suite 1 > Case 3
+(cases remaining: 1)
+
+What would Python display? If you get stuck, try it out in the Python
+interpreter!
+
+>>> from car import *
+>>> deneros_car = MonsterTruck('Monster', 'Batmobile')
+>>> deneros_car.drive() # Type Error if an error occurs and Nothing if nothing is displayed
+(line 1)? Error
+-- Not quite. Try again! --
+
+(line 1)? Nothing
+-- Not quite. Try again! --
+
+(line 1)? "Monster Batmobile goes vroom!"
+-- Not quite. Try again! --
+
+(line 1)? Vroom! This Monster Truck is huge!
+(line 2)? "Monster Batmobile goes vroom!"
+-- OK! --
+
+>>> Car.drive(deneros_car) # Type Error if an error occurs and Nothing if nothing is displayed
+? "Monster Batmobile goes vroom!"
+-- OK! --
+
+>>> MonsterTruck.drive(deneros_car) # Type Error if an error occurs and Nothing if nothing is displayed
+(line 1)?
+-- Not quite. Try again! --
+
+(line 1)? 'Vroom! This Monster Truck is huge!'
+-- Not quite. Try again! --
+
+(line 1)? Vroom! This Monster Truck is huge!
+(line 2)? "Monster Batmobile goes vroom!"
+-- OK! --
+
+>>> Car.rev(deneros_car) # Type Error if an error occurs and Nothing if nothing is displayed
+? Vroom! This Monster Truck is huge!
+-- Not quite. Try again! --
+
+? Error
+-- OK! --
+
+---------------------------------------------------------------------
+OK! All cases for Car unlocked.
+
+Performing authentication
+Please enter your bCourses email: Error
